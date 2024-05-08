@@ -1,8 +1,6 @@
 import { AiFillStar } from "react-icons/ai"; 
 import { IoMdClose } from "react-icons/io"; 
 import { FaCheck } from "react-icons/fa"; 
-import { CgClose } from "react-icons/cg";
-import { BsCheckLg } from "react-icons/bs";
 import { TbWorldWww } from "react-icons/tb";
 
 import { SiNintendogamecube } from "react-icons/si";
@@ -450,7 +448,7 @@ WHAT CLIENTS ARE SAYING ABOUT US
 {testimonialData.map((test, index) => (
 <div key={index} className="flex flex-col gap-3 border rounded-md p-5 shadow-md  w-[400px] h-full">
   <div className="flex items-center gap-3">
-<img className="w-[50px] h-[50px] object-cover rounded-full" src={test.unsplashLink} alt="pgo"/>
+<Image width={100} height={100} className=" object-cover rounded-full" src={test.unsplashLink} alt="pgo"/>
 <div className="">
   <h4 className="text-semibold text-sm text-[#493E81]">{test.user}</h4>
   <p className="text-bold text-sm">{test.role}</p>
