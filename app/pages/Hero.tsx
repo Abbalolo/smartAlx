@@ -48,8 +48,8 @@ Aos.init();
 
 
     {/* about */}
-      <section id="about" className="px-5 pt-10 lg:flex lg:items-center justify-between lg:gap-16">
-        <div className="flex flex-col items-start gap-5 lg:w-[65%]">
+      <section  id="about" className="px-5 pt-10 lg:flex lg:items-center justify-between lg:gap-16">
+        <div  data-aos="fade-left" className="flex flex-col items-start gap-5 lg:w-[65%]">
           <h2 className="text-[#493E81] text-2xl font-bold">
             DRIVE YOUR BUSINESS GROWTH WITH US
           </h2>
@@ -67,7 +67,7 @@ Aos.init();
             Get Started For Free
           </button>
         </div>  
-        <div className="grid md:grid-cols-2 gap-5 mt-3 ">
+        <div  data-aos="fade-right" className="grid md:grid-cols-2 gap-5 mt-3 ">
           {aboutData.map((item, index) => (
             <div
               key={index}
@@ -93,7 +93,7 @@ Aos.init();
 
          
           {/* home */}
-      <section id="use-cases" className="px-5 md:my-10 pt-20 flex flex-col lg:items-center justify-between lg:gap-16 gap-10">
+      <section  data-aos="fade-in" id="use-cases" className="px-5 md:my-10 pt-20 flex flex-col lg:items-center justify-between lg:gap-16 gap-10">
         <h2 className="text-[#493E81] text-center  text-2xl md:text-3xl  font-bold">
           BASE DATA THAT YOU CAN CREATE
         </h2>
@@ -114,11 +114,12 @@ Aos.init();
             </p>
           </div>
 
-          <Image src={Image1} width={550} height={500} alt="dashboard overview" />
+          <Image  data-aos="fade-in" src={Image1} width={550} height={500} alt="dashboard overview" />
         </div>
 
         <div className="flex items-center flex-col lg:flex-row lg:gap-20 gap-10">
           <Image
+           data-aos="fade-in"
             src={heroImage}
             width={550}
             height={500}
@@ -141,7 +142,7 @@ Aos.init();
           </div>
         </div>
 
-        <div className="flex items-center flex-col lg:flex-row lg:gap-20 gap-10">
+        <div  data-aos="fade-down" className="flex items-center flex-col lg:flex-row lg:gap-20 gap-10">
           <div className="flex flex-col items-start gap-3 lg:w-[60%]">
             <h2 className="text-[#493E81] text-2xl md:text-3xl  font-bold">
               PRACTICE USING REAL-LIFE SCENARIOS
@@ -161,7 +162,7 @@ Aos.init();
         </div>
       </section>
 
-      <section className="bg-[#493E81] text-white px-5 py-16  mt-10 flex flex-col justify-center items-center">
+      <section  data-aos="fade-up" className="bg-[#493E81] text-white px-5 py-16  mt-10 flex flex-col justify-center items-center">
         <div className="flex md:flex-row flex-col items-center   gap-5 w-full">
           <div className="text-white flex flex-col w-full items-center justify-center bg-[#5B518E] p-7 rounded-md">
             <HiUserGroup className="text-5xl" />
@@ -188,7 +189,7 @@ Aos.init();
         </div>
       </section>
 
-      <section className="px-5 py-10 md:flex-row flex flex-col lg:items-center justify-between gap-5 md:gap-16">
+      <section  data-aos="fade-right" className="px-5 py-10 md:flex-row flex flex-col lg:items-center justify-between gap-5 md:gap-16">
         <div className="flex flex-col items-start gap-3 lg:w-[65%]">
           <h2 className="text-[#493E81] text-2xl md:text-3xl  font-bold">
             DASHBOARDS FOR YOU
@@ -221,19 +222,19 @@ Aos.init();
             Learn For Free
           </button>
         </div>
-        <Image src={Image3} width={550} height={500} alt="dashboard overview" />
+        <Image  data-aos="fade-in" src={Image3} width={550} height={500} alt="dashboard overview" />
       </section>
 
 
   {/* pricing */}
-      <section id="pricing" className="bg-[#493E81] px-5 py-10">
+      <section  data-aos="fade-in" id="pricing" className="bg-[#493E81] px-5 py-10">
         <h2 className="text-white text-center text-3xl font-bold my-10">
           OUR PRICE PLAN
         </h2>
 
 <div className="flex flex-col md:flex-row gap-4  ">
 
-        <div className="mt-5 flex flex-col w-full gap-3 bg-[#5B518E] rounded-lg py-8 px-5 shadow-md">
+        <div  data-aos="fade-up" className="mt-5 flex flex-col w-full gap-3 bg-[#5B518E] rounded-lg py-8 px-5 shadow-md">
           <h4 className="text-2xl text-center font-bold text-white">Start Free</h4>
           <h4 className="text-6xl font-bold text-center text-white">$0</h4>
           <div className="mt-3 flex flex-col gap-2 p-3">
@@ -278,7 +279,7 @@ Aos.init();
 
         </div>
 
-        <div className="mt-5 flex flex-col gap-3 w-full bg-[#423874] rounded-lg py-8 px-5 shadow-md">
+        <div  data-aos="fade-down" className="mt-5 flex flex-col gap-3 w-full bg-[#423874] rounded-lg py-8 px-5 shadow-md">
           <h4 className="text-2xl text-center font-bold text-white">Pro</h4>
           <h4 className="text-6xl font-bold text-center text-white">$129</h4>
           <div className="mt-3 flex flex-col gap-2 p-3">
@@ -324,7 +325,7 @@ Aos.init();
         </div>
 
 
-        <div className="mt-5 flex flex-col gap-3 bg-[#5B518E] w-full rounded-lg py-8 px-5  shadow-md">
+        <div  data-aos="fade-up" className="mt-5 flex flex-col gap-3 bg-[#5B518E] w-full rounded-lg py-8 px-5  shadow-md">
           <h4 className="text-2xl text-center font-bold text-white">Business</h4>
           <h4 className="text-6xl font-bold text-center text-white">$949</h4>
           <div className="mt-3 flex flex-col gap-2 p-3">
@@ -373,7 +374,7 @@ Aos.init();
       </section>
 
   {/* testimonial */}
-<section id="testimonial" className="px-5 py-10" >
+<section  data-aos="fade-in" id="testimonial" className="px-5 py-10" >
 <h2 className="text-[#493E81] text-center  text-2xl md:text-3xl  font-bold">
 WHAT CLIENTS ARE SAYING ABOUT US
         </h2>
