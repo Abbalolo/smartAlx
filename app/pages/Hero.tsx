@@ -10,7 +10,7 @@ import { HiUserGroup } from "react-icons/hi";
 import { AiFillCheckCircle } from "react-icons/ai";
 import Image from "next/image";
 import React, { useEffect } from "react";
-import heroImage from "../asset/homeImage.png";
+import heroImage from "../asset/homeimg.png";
 import Image1 from "../asset/download3.png";
 import Image2 from "../asset/download4.png";
 import Image3 from "../asset/download6.png";
