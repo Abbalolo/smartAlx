@@ -32,9 +32,15 @@ function Navbar() {
             <Link className="font-semibold transition-all duration-300" onClick={() => setIsOpen(false)} href="#pricing">Pricing</Link>
 
           </li>
-          <li>
+          <li className="relative">
             <Link className="flex items-center font-semibold " onClick={() => setToggleCaret(!toggleCaret) } href="#">Pages {toggleCaret ? <FaCaretUp  />: <FaCaretDown />}</Link>
+            {toggleCaret &&
+              <div className="absolute top-7 lg:-left-10 text-center justify-center shadow-md rounded-md flex flex-col gap-2 text-[#493E81] bg-white w-[180px] px-10 py-5">
+            <Link className="font-semibold " onClick={() => setToggleCaret(!toggleCaret) } href="login">Login</Link>
+            <Link className="font-semibold " onClick={() => setToggleCaret(!toggleCaret) } href="register">Register</Link>
+            </div>}
             </li>
+
           <li><Link className="border ring-1 rounded-sm px-7 py-2 font-semibold "  onClick={() => setToggleCaret(!toggleCaret) } href="#">Start for free</Link></li>
           
         </ul>

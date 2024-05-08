@@ -9,7 +9,7 @@ import logo from "../asset/logo.png"
 function Footer() {
   return (
     <footer className=' bg-[#493E81] text-white py-10 px-5 flex flex-col items-center justify-center'>
-        <div className="flex flex-col gap-5 items-center justify-center my-10 md:w-[50%]">
+        <div className="flex flex-col gap-5 items-center justify-center mt-10 mb-20 md:w-[50%]">
         <h2 className=" text-center  text-3xl md:text-4xl  font-bold">
 ARE YOU READY TO START?
         </h2>
