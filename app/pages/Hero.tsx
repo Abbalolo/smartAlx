@@ -10,10 +10,10 @@ import { HiUserGroup } from "react-icons/hi";
 import { AiFillCheckCircle } from "react-icons/ai";
 import Image from "next/image";
 import React, { useEffect } from "react";
-import heroImg from "../asset/homeimg.png";
-import img1 from "../asset/download3.png";
-import img2 from "../asset/download4.png";
-import img3 from "../asset/download6.png";
+import heroImage from "../asset/homeImage.png";
+import Image1 from "../asset/download3.png";
+import Image2 from "../asset/download4.png";
+import Image3 from "../asset/download6.png";
 import Aos from "aos"
 import "aos/dist/aos.css"
 
@@ -39,7 +39,7 @@ Aos.init();
         </div>
         <Image
         data-aos="fade-down"
-          src={heroImg}
+          src={heroImage}
           width={850}
           height={500}
           alt="dashboard overview"
@@ -104,22 +104,22 @@ Aos.init();
             </h3>
 
             <p className="text-gray-400">
-              Parsed, structured & clean all data from sources organized into
+              Parsed, structured and clean all data from sources organized into
               data categories. Our datasets cover all essential aspects of
               information abo Drive your career & learn industry.
             </p>
             <p className="text-gray-400">
-              From instructor with there's experience top Fortune companies. Our
-              business & finance courses include guidance.
+              From instructor with theres experience top Fortune companies. Our
+              business and finance courses include guidance.
             </p>
           </div>
 
-          <Image src={img1} width={550} height={500} alt="dashboard overview" />
+          <Image src={Image1} width={550} height={500} alt="dashboard overview" />
         </div>
 
         <div className="flex items-center flex-col lg:flex-row lg:gap-20 gap-10">
           <Image
-            src={heroImg}
+            src={heroImage}
             width={550}
             height={500}
             alt="dashboard overview"
@@ -135,7 +135,7 @@ Aos.init();
               information abo Drive your career & learn industry.
             </p>
             <p className="text-gray-400">
-              From instructor with there's experience top Fortune companies. Our
+              From instructor with there&apos;s experience top Fortune companies. Our
               business & finance courses include guidance.
             </p>
           </div>
@@ -153,11 +153,11 @@ Aos.init();
               information abo Drive your career & learn industry.
             </p>
             <p className="text-gray-400">
-              From instructor with there's experience top Fortune companies. Our
+              From instructor with there&apos;s experience top Fortune companies. Our
               business & finance courses include guidance.
             </p>
           </div>
-          <Image src={img2} width={550} height={500} alt="dashboard overview" />
+          <Image src={Image2} width={550} height={500} alt="dashboard overview" />
         </div>
       </section>
 
@@ -221,7 +221,7 @@ Aos.init();
             Learn For Free
           </button>
         </div>
-        <Image src={img3} width={550} height={500} alt="dashboard overview" />
+        <Image src={Image3} width={550} height={500} alt="dashboard overview" />
       </section>
 
 
@@ -386,7 +386,7 @@ WHAT CLIENTS ARE SAYING ABOUT US
 {testimonialData.map((test, index) => (
 <div key={index} className="flex flex-col gap-3 border rounded-md p-5 shadow-md  w-[400px] h-full">
   <div className="flex items-center gap-3">
-<img className="w-[50px] h-[50px] object-cover rounded-full" src={test.unsplashLink} alt="pgo"/>
+<Image width={100} height={100} className="object-cover rounded-full" src={test.unsplashLink} alt="pgo"/>
 <div className="">
   <h4 className="text-semibold text-sm text-[#493E81]">{test.user}</h4>
   <p className="text-bold text-sm">{test.role}</p>
@@ -414,7 +414,7 @@ WHAT CLIENTS ARE SAYING ABOUT US
 {testimonialData.map((test, index) => (
 <div key={index} className="flex flex-col gap-3 border rounded-md p-5 shadow-md  w-[400px] h-full">
   <div className="flex items-center gap-3">
-<img className="w-[50px] h-[50px] object-cover rounded-full" src={test.unsplashLink} alt="pgo"/>
+<Image width={100} height={100} className="object-cover rounded-full" src={test.unsplashLink} alt="pgo"/>
 <div className="">
   <h4 className="text-semibold text-sm text-[#493E81]">{test.user}</h4>
   <p className="text-bold text-sm">{test.role}</p>
@@ -476,7 +476,7 @@ WHAT CLIENTS ARE SAYING ABOUT US
 {testimonialData.map((test, index) => (
 <div key={index} className="flex flex-col gap-3 border rounded-md p-5 shadow-md  w-[400px] h-full">
   <div className="flex items-center gap-3">
-<img className="w-[50px] h-[50px] object-cover rounded-full" src={test.unsplashLink} alt="pgo"/>
+<Image width={100} height={100} className="object-cover rounded-full" src={test.unsplashLink} alt="pgo"/>
 <div className="">
   <h4 className="text-semibold text-sm text-[#493E81]">{test.user}</h4>
   <p className="text-bold text-sm">{test.role}</p>
