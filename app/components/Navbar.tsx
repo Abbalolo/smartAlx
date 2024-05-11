@@ -11,6 +11,11 @@ import Image from 'next/image'
 function Navbar() {
   const [toggleCaret , setToggleCaret] = useState(false)
   const [isOpen , setIsOpen] = useState(false)
+
+  const handleMenu = () => {
+    setIsOpen(false)
+    setToggleCaret(false)
+  }
   return (
     <div className='bg-[#493E81] fixed top-0 left-0 w-full p-5 flex justify-between items-center z-50'>
      
@@ -36,8 +41,8 @@ function Navbar() {
             <Link className="flex items-center font-semibold " onClick={() => setToggleCaret(!toggleCaret) } href="#">Pages {toggleCaret ? <FaCaretUp  />: <FaCaretDown />}</Link>
             {toggleCaret &&
               <div className="absolute top-7 lg:-left-10 text-center justify-center shadow-md rounded-md flex flex-col gap-2 text-[#493E81] bg-white w-[180px] px-10 py-5">
-            <Link className="font-semibold " onClick={() => setToggleCaret(!toggleCaret) } href="login">Login</Link>
-            <Link className="font-semibold " onClick={() => setToggleCaret(!toggleCaret) } href="register">Register</Link>
+            <Link className="font-semibold " onClick={() => setToggleCaret(!toggleCaret) } href="/login">Login</Link>
+            <Link className="font-semibold " onClick={() => setToggleCaret(!toggleCaret) } href="/register">Register</Link>
             </div>}
             </li>
 
@@ -48,7 +53,7 @@ function Navbar() {
 
 
 <button className="text-white text-2xl lg:hidden" onClick={() => setIsOpen(!isOpen)}>
-{isOpen ? <AiOutlineClose onClick={() => setIsOpen(false)} />: <BiMenuAltRight />}
+{isOpen ? <AiOutlineClose onClick={handleMenu} />: <BiMenuAltRight />}
 </button>
 </div>
 

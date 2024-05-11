@@ -18,7 +18,7 @@ import Aos from "aos"
 import "aos/dist/aos.css"
 
 
-import { aboutData, testimonialData } from "../components/Data";
+import { aboutData, testimonialData } from "./Data";
 
 function Hero() {
   useEffect(() => {
@@ -27,7 +27,7 @@ Aos.init();
   return (
     <>
     {/* home */}
-      <section id="home" className="bg-[#493E81] text-white px-5 pt-16 lg:pt-28 flex flex-col justify-center items-center">
+      <section id="home" className="bg-[#493E81] text-white px-5 pt-16 lg:pt-28 flex flex-col justify-center items-center overflow-hidden">
         <div  data-aos="fade-in" className="flex flex-col items-center  gap-5 lg:px-[220px]">
           <h1 className="text-[27px] lg:text-5xl font-bold text-center">
             START YOUR DATA JOURNEY WITH SMARTAIX
@@ -387,7 +387,9 @@ WHAT CLIENTS ARE SAYING ABOUT US
 {testimonialData.map((test, index) => (
 <div key={index} className="flex flex-col gap-3 border rounded-md p-5 shadow-md  w-[400px] h-full">
   <div className="flex items-center gap-3">
-<Image width={100} height={100} className="object-cover rounded-full" src={test.unsplashLink} alt="pgo"/>
+    <div className="w-[50px] h-[70px] ">
+<Image width={100} height={40} className="object-cover rounded-full" src={test.unsplashLink} alt="pgo"/>
+</div>
 <div className="">
   <h4 className="text-semibold text-sm text-[#493E81]">{test.user}</h4>
   <p className="text-bold text-sm">{test.role}</p>
@@ -415,7 +417,9 @@ WHAT CLIENTS ARE SAYING ABOUT US
 {testimonialData.map((test, index) => (
 <div key={index} className="flex flex-col gap-3 border rounded-md p-5 shadow-md  w-[400px] h-full">
   <div className="flex items-center gap-3">
-<Image width={100} height={100} className="object-cover rounded-full" src={test.unsplashLink} alt="pgo"/>
+  <div className="w-[50px] h-[70px] ">
+<Image width={100} height={40} className="object-cover rounded-full" src={test.unsplashLink} alt="pgo"/>
+</div>
 <div className="">
   <h4 className="text-semibold text-sm text-[#493E81]">{test.user}</h4>
   <p className="text-bold text-sm">{test.role}</p>
@@ -449,7 +453,9 @@ WHAT CLIENTS ARE SAYING ABOUT US
 {testimonialData.map((test, index) => (
 <div key={index} className="flex flex-col gap-3 border rounded-md p-5 shadow-md  w-[400px] h-full">
   <div className="flex items-center gap-3">
-<Image width={100} height={100} className=" object-cover rounded-full" src={test.unsplashLink} alt="pgo"/>
+  <div className="w-[50px] h-[70px] ">
+<Image width={100} height={40} className="object-cover rounded-full" src={test.unsplashLink} alt="pgo"/>
+</div>
 <div className="">
   <h4 className="text-semibold text-sm text-[#493E81]">{test.user}</h4>
   <p className="text-bold text-sm">{test.role}</p>
@@ -477,7 +483,9 @@ WHAT CLIENTS ARE SAYING ABOUT US
 {testimonialData.map((test, index) => (
 <div key={index} className="flex flex-col gap-3 border rounded-md p-5 shadow-md  w-[400px] h-full">
   <div className="flex items-center gap-3">
-<Image width={100} height={100} className="object-cover rounded-full" src={test.unsplashLink} alt="pgo"/>
+  <div className="w-[50px] h-[70px] ">
+<Image width={100} height={40} className="object-cover rounded-full" src={test.unsplashLink} alt="pgo"/>
+</div>
 <div className="">
   <h4 className="text-semibold text-sm text-[#493E81]">{test.user}</h4>
   <p className="text-bold text-sm">{test.role}</p>

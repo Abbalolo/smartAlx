@@ -1,11 +1,10 @@
 "use client"
 // import { useEffect, useState } from "react";
-import Navbar from "./components/Navbar";
-import Hero from "./pages/Hero";
-// import PreLoader from "./components/PreLoader";
-import Footer from "./components/Footer";
 
-// Assume "useClient" is a function or hook related to client-side logic
+import Hero from "./components/Hero";
+// import PreLoader from "./components/PreLoader";
+
+
 
 export default function Home() {
   // const [loading, setLoading] = useState(true);
@@ -33,11 +32,11 @@ export default function Home() {
           </main>
         </>
       )} */}
-       <Navbar />
+  
           <main className=" ">
             <Hero />
           </main>
-          <Footer/>
+        
     </>
   );
 }
