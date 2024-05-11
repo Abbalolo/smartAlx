@@ -57,7 +57,7 @@ function Navbar() {
               </Link>
             </li>
             <li className="relative">
-              <div className="flex items-center font-semibold" onClick={() => setToggleCaret(!toggleCaret)}>
+              <div className="cursor-pointer flex items-center font-semibold" onClick={() => setToggleCaret(!toggleCaret)}>
                 Pages {toggleCaret ? <FaCaretUp /> : <FaCaretDown />}
               </div>
               {toggleCaret && (
@@ -76,6 +76,7 @@ function Navbar() {
                 Start for free
               </Link>
             </li>
+            
           </ul>
         </nav>
 
