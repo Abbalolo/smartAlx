@@ -3,17 +3,17 @@ import { AiFillApple } from "react-icons/ai";
 import { AiOutlineGoogle } from "react-icons/ai"; 
 import React from 'react';
 import Image from "next/image";
-import { useMediaQuery } from 'react-responsive';
+// import { useMediaQuery } from 'react-responsive';
 import authImage from "../asset/authimg.png"
 import Link from "next/link";
 
 function Page() {
-  const isSmallScreen = useMediaQuery({ maxWidth: 768 });
-  const width = isSmallScreen ? 200 : 500;
+  // const isSmallScreen = useMediaQuery({ maxWidth: 768 });
+  // const width = isSmallScreen ? 200 : 500;
   return (
     <main className="lg:flex ">
       <div className="lg:w-[100%] flex items-center justify-center bg-[#493E81] p-10">
-        <Image src={authImage} width={width} height={500} alt="register background image "/>
+        <Image src={authImage}  className='w-40 md:w-[300px]' alt="register background image "/>
       </div>
       <div className="px-5 pb-10 pt-5 lg:px-32 w-full">
         <h2 className='text-[#493E81] text-2xl text-center font-semibold py-5'>Create an Account</h2>
