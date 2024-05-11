@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 
-/* body{
+body{
     padding-top: 4em;
     scroll-behavior: smooth;
-} */
+}
 
 .marquee {
     overflow: hidden;
