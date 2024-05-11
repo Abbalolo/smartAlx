@@ -32,27 +32,27 @@ function Navbar() {
         >
           <ul className="flex flex-col lg:flex-row lg:gap-5 gap-5 text-[15px]">
             <li>
-              <Link className="font-semibold transition-all duration-300" href="#home">
+              <Link className="font-semibold transition-all duration-300" onClick={handleMenu} href="/">
                 Home
               </Link>
             </li>
             <li>
-              <Link className="font-semibold transition-all duration-300" href="#about">
+              <Link className="font-semibold transition-all duration-300" onClick={handleMenu} href="#about">
                 About
               </Link>
             </li>
             <li>
-              <Link className="font-semibold transition-all duration-300" href="#use-cases">
+              <Link className="font-semibold transition-all duration-300" onClick={handleMenu} href="#use-cases">
                 Use Cases
               </Link>
             </li>
             <li>
-              <Link className="font-semibold transition-all duration-300" href="#testimonial">
+              <Link className="font-semibold transition-all duration-300" onClick={handleMenu} href="#testimonial">
                 Testimonials
               </Link>
             </li>
             <li>
-              <Link className="font-semibold transition-all duration-300" href="#pricing">
+              <Link className="font-semibold transition-all duration-300" onClick={handleMenu} href="#pricing">
                 Pricing
               </Link>
             </li>
