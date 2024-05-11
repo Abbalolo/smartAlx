@@ -17,7 +17,7 @@ function Navbar() {
   };
 
   return (
-    <div className="bg-[#493E81] overflow-hidden fixed top-0 left-0 w-full p-5 flex justify-between items-centerc z-50">
+    <div className="bg-[#493E81] fixed top-0 left-0 w-full p-5 flex justify-between items-centerc z-50">
       <Link href="/">
         <Image src={logo} className="w-40" alt="logo image" />
       </Link>
