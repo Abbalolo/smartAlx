@@ -25,9 +25,9 @@ function Hero() {
 Aos.init();
   }, [])
   return (
-    <>
+    <main className="overflow-hidden">
     {/* home */}
-      <section id="home" className="bg-[#493E81] text-white px-5 pt-16 lg:pt-28 flex flex-col justify-center items-center overflow-hidden">
+      <section id="home" className="bg-[#493E81] text-white px-5 pt-16 lg:pt-28 flex flex-col justify-center items-center ">
         <div  data-aos="fade-in" className="flex flex-col items-center  gap-5 lg:px-[220px]">
           <h1 className="text-[27px] lg:text-5xl font-bold text-center">
             START YOUR DATA JOURNEY WITH SMARTAIX
@@ -514,7 +514,7 @@ WHAT CLIENTS ARE SAYING ABOUT US
 
         </div>
 </section>
-    </>
+    </main>
   );
 }
 

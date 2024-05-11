@@ -2,10 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+*{
+  padding-top: 4em;
+  scroll-behavior: smooth; 
+}
+/* body{
     padding-top: 4em;
     scroll-behavior: smooth;
-}
+} */
 
 .marquee {
     overflow: hidden;
