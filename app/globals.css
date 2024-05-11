@@ -2,10 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  padding-top: 4em;
-  scroll-behavior: smooth; 
-}
+
 /* body{
     padding-top: 4em;
     scroll-behavior: smooth;
