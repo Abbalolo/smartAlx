@@ -52,7 +52,7 @@ export default function page() {
   </div>
 </div>
 
-<p className="text-gray-400 text-center">Dont't have an account? <Link href="/register" className="text-[#493E81] font-semibold">Log in</Link></p>
+<p className="text-gray-400 text-center">Dont&apos;t have an account? <Link href="/register" className="text-[#493E81] font-semibold">Log in</Link></p>
 
       </div>
     </main>
